@@ -14,10 +14,6 @@ connectDB();
 const app = express();
 app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.send("api working successfully");
-});
-
 // app.get("/api/chats", (req, res) => {
 //   res.send(chats);
 // });
