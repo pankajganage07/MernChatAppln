@@ -22,7 +22,11 @@ import io from "socket.io-client";
 import Lottie from "lottie-react";
 import animationData from "../animations/typing.json";
 
-const ENDPOINT = "http://localhost:3500";
+// const ENDPOINT = "http://localhost:3500";
+const ENDPOINT =
+  process.env.NODE_ENV === "production"
+    ? "https://mernchatappln.onrender.com"
+    : "http://localhost:3500";
 var socket, selectedChatCompare;
 
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {
