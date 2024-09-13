@@ -244,15 +244,17 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
             >
               {isTyping ? (
                 <div>
-                  <Lottie
+                  {/* <Lottie
                     options={defaultOptions}
                     width={70}
                     style={{ marginBottom: 15, marginLeft: 0 }}
-                  />
+                  /> */}
+                  typing
                 </div>
               ) : (
                 <></>
               )}
+
               <Input
                 variant="filled"
                 bg="#E0E0E0"
